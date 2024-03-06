@@ -10,7 +10,7 @@ const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        remoteEntry: 'https://micro-front-end-2.vercel.app/remoteEntry.js',
         exposedModule: './Module',
       }).then((m) => m.FlightsModule),
   },
